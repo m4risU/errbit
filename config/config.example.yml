@@ -9,14 +9,14 @@
 # You will need to restart the server after changing any settings.
 
 # The host of your errbit server
-host: errbit.example.com
+host: errbit.redwarrior.pl
 
 # Enforce SSL connections
 enforce_ssl: false
 
 # The email address which email notifications
 # will be sent from.
-email_from: errbit@example.com
+email_from: errbit@redwarrior.pl
 
 # If you turn on this option, email_at_notices can be
 # configured on a per app basis, at the App edit page
@@ -42,12 +42,12 @@ allow_comments_with_issue_tracker: true
 # Setup your deploy options for capistrano.
 deployment:
   hosts:
-    web: errbit.example.com
-    app: errbit.example.com
-    db: errbit.example.com
-  repository: http://github.com/errbit/errbit.git
-  user: deploy
-  deploy_to: /var/www/apps/errbit
+    web: errbit.redwarrior.pl
+    app: errbit.redwarrior.pl
+    db: errbit.redwarrior.pl
+  repository: https://github.com/m4risU/errbit
+  user: rails
+  deploy_to: /home/rails/errbit
 
 # GitHub OAuth configuration
 # If you want to allow authentication via GitHub, you will need to register

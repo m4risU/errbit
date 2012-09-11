@@ -1,3 +1,10 @@
+# In case of troubles when launching mongodb, see: http://stackoverflow.com/questions/4837427/mongo-ruby-connection-problem
+
+sudo rm /var/lib/mongodb/mongod.lock
+sudo -u mongodb mongod -f /etc/mongodb.conf --repair
+sudo start mongodb
+sudo status mongodb
+
 # Errbit [![TravisCI][travis-img-url]][travis-ci-url]
 
 [travis-img-url]: https://secure.travis-ci.org/errbit/errbit.png?branch=master

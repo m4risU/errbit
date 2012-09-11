@@ -44,8 +44,8 @@ group :development, :test do
   gem 'rspec-rails', '~> 2.6'
   gem 'webmock', :require => false
   unless ENV["CI"]
-    gem 'ruby-debug', :platform => :mri_18
-    gem 'debugger', :platform => :mri_19
+    #gem 'ruby-debug', :platform => :mri_18
+    #gem 'debugger', :platform => :mri_19
   end
   # gem 'rpm_contrib', :git => "git://github.com/bensymonds/rpm_contrib.git", :branch => "mongo-1.4.0_update"
 end
@@ -72,3 +72,5 @@ group :assets do
   gem 'therubyracer', :platform => :ruby  # C Ruby (MRI) or Rubinius, but NOT Windows
   gem 'uglifier',     '>= 1.0.3'
 end
+
+gem 'capistrano'
